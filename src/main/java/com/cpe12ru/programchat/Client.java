@@ -30,7 +30,7 @@ public class Client implements Runnable {
             _thread1 = new Thread(this);
             _thread2 = new Thread(this);
             clientSocket = new Socket("localhost", 9090);
-            System.out.println("Client Chat Online......");
+            System.out.println("Chat Client Online... Exit by print 'END'...");
             _thread1.start();
             _thread2.start();
 

@@ -34,6 +34,7 @@ public class Server implements Runnable {
             System.out.println("Server is waiting. . . . ");
             connectionSocket = welcomeSocket.accept();
             System.out.println("Client connected with IP " + connectionSocket.getLocalAddress().getHostAddress());
+            System.out.println("Chat Server Online... Exit by print 'END'...");
             _thread1.start();
             _thread2.start();
 
